@@ -1,0 +1,413 @@
+.key-binder-dialog.key-binder-dialog.key-binder-dialog {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 2147483647 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+    line-height: normal !important;
+    text-align: left !important;
+    direction: ltr !important;
+    color: initial !important;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    font-style: normal !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    vertical-align: baseline !important;
+    white-space: normal !important;
+    word-wrap: normal !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}
+
+.key-binder-overlay.key-binder-overlay.key-binder-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    z-index: auto !important;
+}
+
+.key-binder-modal.key-binder-modal.key-binder-modal {
+    background: white !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+    width: 90% !important;
+    max-width: 400px !important;
+    max-height: 90vh !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    display: block !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: #333 !important;
+    text-align: left !important;
+}
+
+.key-binder-header.key-binder-header.key-binder-header {
+    padding: 20px 20px 10px !important;
+    border-bottom: 1px solid #eee !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin: 0 !important;
+    background: transparent !important;
+    box-sizing: border-box !important;
+}
+
+.key-binder-header.key-binder-header.key-binder-header h3 {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 18px !important;
+    color: #333 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.key-binder-close.key-binder-close.key-binder-close {
+    background: none !important;
+    border: none !important;
+    font-size: 24px !important;
+    color: #999 !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    width: 30px !important;
+    height: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: background-color 0.2s !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+.key-binder-close.key-binder-close.key-binder-close:hover {
+    background: #f5f5f5 !important;
+}
+
+.key-binder-content.key-binder-content.key-binder-content {
+    padding: 20px !important;
+    margin: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: #333 !important;
+}
+
+.element-info.element-info.element-info {
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+    background: #f8f9fa !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #4CAF50 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    box-sizing: border-box !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    color: #333 !important;
+    display: block !important;
+}
+
+.element-info.element-info.element-info strong {
+    font-weight: 600 !important;
+    color: #333 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.element-description.element-description.element-description {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace !important;
+    font-size: 13px !important;
+    color: #666 !important;
+    margin-top: 5px !important;
+    word-break: break-all !important;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    line-height: 1.3 !important;
+}
+
+.key-selection.key-selection.key-selection {
+    margin-bottom: 20px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+}
+
+.key-selection.key-selection.key-selection label {
+    display: block !important;
+    margin-bottom: 8px !important;
+    font-weight: 500 !important;
+    color: #333 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    text-align: left !important;
+    cursor: default !important;
+}
+
+.key-input.key-input.key-input {
+    width: 100% !important;
+    padding: 12px !important;
+    border: 2px solid #ddd !important;
+    border-radius: 8px !important;
+    font-size: 16px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+    background: #f9f9f9 !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1.2 !important;
+    color: #1a1a1a !important;
+    outline: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    resize: none !important;
+    min-height: auto !important;
+    max-height: none !important;
+    height: auto !important;
+    display: block !important;
+}
+
+.key-input.key-input.key-input:focus {
+    outline: none !important;
+    border-color: #4CAF50 !important;
+    background: white !important;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.1) !important;
+    color: #1a1a1a !important;
+}
+
+.key-binder-actions.key-binder-actions.key-binder-actions {
+    display: flex !important;
+    gap: 10px !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    align-items: center !important;
+}
+
+.key-binder-btn.key-binder-btn.key-binder-btn {
+    padding: 10px 20px !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s !important;
+    margin: 0 !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    outline: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    min-width: auto !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+}
+
+.key-binder-btn-primary.key-binder-btn-primary.key-binder-btn-primary {
+    background: #4CAF50 !important;
+    color: white !important;
+}
+
+.key-binder-btn-primary.key-binder-btn-primary.key-binder-btn-primary:hover:not(:disabled) {
+    background: #45a049 !important;
+}
+
+.key-binder-btn-primary.key-binder-btn-primary.key-binder-btn-primary:disabled {
+    background: #ccc !important;
+    cursor: not-allowed !important;
+    color: white !important;
+}
+
+.key-binder-btn-secondary.key-binder-btn-secondary.key-binder-btn-secondary {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+}
+
+.key-binder-btn-secondary.key-binder-btn-secondary.key-binder-btn-secondary:hover {
+    background: #e9e9e9 !important;
+}
+
+#key-binder-instruction#key-binder-instruction#key-binder-instruction {
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 2147483646 !important;
+    background: #333 !important;
+    color: white !important;
+    padding: 15px 25px !important;
+    border-radius: 25px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    animation: slideDown 0.3s ease-out !important;
+    margin: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: 400px !important;
+    pointer-events: none !important;
+}
+
+.instruction-content.instruction-content.instruction-content {
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+}
+
+.instruction-text.instruction-text.instruction-text {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-bottom: 5px !important;
+    margin-top: 0 !important;
+    padding: 0 !important;
+    color: white !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+}
+
+.instruction-subtext.instruction-subtext.instruction-subtext {
+    font-size: 12px !important;
+    opacity: 0.8 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: white !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    line-height: 1.3 !important;
+    text-align: center !important;
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.key-pressed-feedback.key-pressed-feedback.key-pressed-feedback {
+    position: fixed !important;
+    z-index: 2147483645 !important;
+    background: #4CAF50 !important;
+    color: rgb(243, 28, 8) !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+    transform: translate(-50%, 0) !important;
+    animation: keyFeedback 1s ease-out forwards !important;
+    pointer-events: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+    margin: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+}
+
+@keyframes keyFeedback {
+    0% {
+        transform: translate(-50%, 0) scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(-50%, -10px) scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -20px) scale(0.9);
+        opacity: 0;
+    }
+}

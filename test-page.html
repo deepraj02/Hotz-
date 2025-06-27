@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Element Key Binder Test Page</title>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                line-height: 1.6;
+            }
+
+            .header {
+                text-align: center;
+                margin-bottom: 40px;
+                padding: 20px;
+                background: linear-gradient(135deg, #4CAF50, #45a049);
+                color: white;
+                border-radius: 12px;
+            }
+
+            .section {
+                margin: 30px 0;
+                padding: 20px;
+                border: 2px solid #f0f0f0;
+                border-radius: 8px;
+            }
+
+            .section h3 {
+                margin-top: 0;
+                color: #333;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                padding: 12px 24px;
+                border: none;
+                border-radius: 6px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: 500;
+                transition: all 0.3s ease;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            .btn-primary {
+                background: #2196F3;
+                color: white;
+            }
+
+            .btn-primary:hover {
+                background: #1976D2;
+                transform: translateY(-2px);
+            }
+
+            .btn-success {
+                background: #4CAF50;
+                color: white;
+            }
+
+            .btn-success:hover {
+                background: #45a049;
+                transform: translateY(-2px);
+            }
+
+            .btn-warning {
+                background: #FF9800;
+                color: white;
+            }
+
+            .btn-warning:hover {
+                background: #F57C00;
+                transform: translateY(-2px);
+            }
+
+            .btn-danger {
+                background: #f44336;
+                color: white;
+            }
+
+            .btn-danger:hover {
+                background: #d32f2f;
+                transform: translateY(-2px);
+            }
+
+            .links {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .link {
+                color: #2196F3;
+                text-decoration: none;
+                padding: 8px 16px;
+                border: 2px solid #2196F3;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+            }
+
+            .link:hover {
+                background: #2196F3;
+                color: white;
+            }
+
+            .form-section {
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            .form-group {
+                margin: 15px 0;
+            }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: 500;
+                color: #333;
+            }
+
+            .form-control {
+                width: 100%;
+                padding: 10px;
+                border: 2px solid #ddd;
+                border-radius: 4px;
+                font-size: 14px;
+                box-sizing: border-box;
+            }
+
+            .form-control:focus {
+                outline: none;
+                border-color: #4CAF50;
+            }
+
+            .result {
+                margin-top: 20px;
+                padding: 15px;
+                background: #e8f5e8;
+                border: 1px solid #4CAF50;
+                border-radius: 6px;
+                display: none;
+            }
+
+            .instructions {
+                background: #fff3cd;
+                border: 1px solid #ffeaa7;
+                border-radius: 6px;
+                padding: 15px;
+                margin-bottom: 30px;
+            }
+
+            .instructions h4 {
+                margin-top: 0;
+                color: #856404;
+            }
+
+            .key-display {
+                display: inline-block;
+                background: #333;
+                color: white;
+                padding: 4px 8px;
+                border-radius: 4px;
+                font-weight: bold;
+                font-family: monospace;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header">
+            <h1>🎯 Element Key Binder Test Page</h1>
+            <p>Use this page to test the Element Key Binder Chrome extension!</p>
+        </div>
+
+        <div class="instructions">
+            <h4>📋 How to Test:</h4>
+            <ol>
+                <li>Make sure the Element Key Binder extension is installed and enabled</li>
+                <li>Click the extension icon in your Chrome toolbar</li>
+                <li>Click "Start Element Selection" in the popup</li>
+                <li>Click on any button, link, or element below</li>
+                <li>Press a key (like <span class="key-display">R</span>, <span class="key-display">Space</span>, or
+                    <span class="key-display">Enter</span>) to assign it</li>
+                <li>Press your assigned key to trigger the element!</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3>🔘 Buttons to Test</h3>
+            <div class="buttons">
+                <button class="btn btn-primary" onclick="showAlert('Primary Button Clicked!')">Primary Button</button>
+                <button class="btn btn-success" onclick="showAlert('Success Button Clicked!')">Success Button</button>
+                <button class="btn btn-warning" onclick="showAlert('Warning Button Clicked!')">Warning Button</button>
+                <button class="btn btn-danger" onclick="showAlert('Danger Button Clicked!')">Danger Button</button>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>🔗 Links to Test</h3>
+            <div class="links">
+                <a href="#" class="link" onclick="showAlert('Link 1 Clicked!'); return false;">Test Link 1</a>
+                <a href="#" class="link" onclick="showAlert('Link 2 Clicked!'); return false;">Test Link 2</a>
+                <a href="#" class="link" onclick="showAlert('Link 3 Clicked!'); return false;">Test Link 3</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>📝 Form Elements</h3>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="testInput">Test Input:</label>
+                    <input type="text" id="testInput" class="form-control" placeholder="Type here...">
+                </div>
+                <div class="form-group">
+                    <label for="testSelect">Test Select:</label>
+                    <select id="testSelect" class="form-control">
+                        <option value="">Choose an option...</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="processForm()">Submit Form</button>
+                    <button class="btn btn-warning" onclick="clearForm()">Clear Form</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>⚡ Interactive Elements</h3>
+            <div class="buttons">
+                <button class="btn btn-success" onclick="toggleTheme()">Toggle Theme</button>
+                <button class="btn btn-primary" onclick="addItem()">Add Item</button>
+                <button class="btn btn-danger" onclick="clearItems()">Clear Items</button>
+            </div>
+            <div id="itemList" style="margin-top: 15px;"></div>
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <script>
+            let itemCount = 0;
+
+            function showAlert(message) {
+                const result = document.getElementById('result');
+                result.textContent = `✅ ${message}`;
+                result.style.display = 'block';
+
+                setTimeout(() => {
+                    result.style.display = 'none';
+                }, 3000);
+            }
+
+            function processForm() {
+                const input = document.getElementById('testInput').value;
+                const select = document.getElementById('testSelect').value;
+
+                if (input || select) {
+                    showAlert(`Form processed! Input: "${input}", Select: "${select}"`);
+                } else {
+                    showAlert('Please fill in at least one field!');
+                }
+            }
+
+            function clearForm() {
+                document.getElementById('testInput').value = '';
+                document.getElementById('testSelect').value = '';
+                showAlert('Form cleared!');
+            }
+
+            function toggleTheme() {
+                const body = document.body;
+                if (body.style.background === 'rgb(51, 51, 51)') {
+                    body.style.background = '';
+                    body.style.color = '';
+                    showAlert('Light theme activated!');
+                } else {
+                    body.style.background = '#333';
+                    body.style.color = '#fff';
+                    showAlert('Dark theme activated!');
+                }
+            }
+
+            function addItem() {
+                itemCount++;
+                const itemList = document.getElementById('itemList');
+                const item = document.createElement('div');
+                item.style.cssText = 'padding: 8px; margin: 5px 0; background: #e3f2fd; border-radius: 4px; border-left: 4px solid #2196F3;';
+                item.innerHTML = `Item ${itemCount} <button onclick="this.parentNode.remove()" style="float: right; border: none; background: #f44336; color: white; padding: 2px 8px; border-radius: 3px; cursor: pointer;">Remove</button>`;
+                itemList.appendChild(item);
+                showAlert(`Item ${itemCount} added!`);
+            }
+
+            function clearItems() {
+                const itemList = document.getElementById('itemList');
+                itemList.innerHTML = '';
+                itemCount = 0;
+                showAlert('All items cleared!');
+            }
+
+            // Show a welcome message
+            setTimeout(() => {
+                showAlert('Welcome! Try binding keys to the elements on this page.');
+            }, 1000);
+        </script>
+    </body>
+
+</html>
